@@ -3,8 +3,8 @@ REM   Activity4
 
 CREATE TABLE salesman ( 
     salesman_id int, 
-    salesman_name varchar2(32), 
-    salesman_city varchar2(32), 
+    salesman_name varchar2(20), 
+    salesman_city varchar2(20), 
     commission int 
 );
 
@@ -17,12 +17,6 @@ INSERT ALL
 SELECT 1 FROM DUAL;
 
 SELECT * FROM salesman;
-
-SELECT salesman_id, salesman_city FROM salesman;
-
-SELECT * FROM salesman WHERE salesman_city='Paris';
-
-SELECT salesman_id, commission FROM salesman WHERE salesman_name='Paul Adam';
 
 ALTER TABLE salesman ADD grade int;
 
